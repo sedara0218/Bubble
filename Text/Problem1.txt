@@ -1,0 +1,5 @@
+ask the user for an integer input by saying "Input" and store that in varibale "one"
+ask the user for an integer input by saying "Input2" and store that in "two"
+add "one" and "two" and store that in "sum"
+if "sum" is divisible by 2 then "sum" divided by 2 and store that in "sum"
+print "sum"
