@@ -1,4 +1,6 @@
 # Bubble
+## Motivation
+#### I have always been interested in creating a fluid programming language and thus for my senior research project I decided to work on the following Bubble Programming Language with my research partner Bharat Venkat.  For a detailed explanation of the project view the Research Paper attached.
 ## Steps to Run the program
 #### 1. Download/Clone all files and folders listed in this repo to a local directory.<br />
   * __API.java__ contains all the methods the user can run.  The Bubble.java program will parse through the input and look for keywords.  Once a keyword is found it will call the appropriate method in API.java to run the keywords functionality.<br />
