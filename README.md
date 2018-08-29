@@ -11,5 +11,5 @@
 #### *Note: you can alter the program by editing Problem1.txt in the Text folder.
 ## Steps to use Bubble for your own basic English programs
 #### 1. View the API.java program to see the basic methods you can write.
-#### 2. View the programs in the Bubble_Examples Folder to view the structure your basic English program should resemble
+#### 2. View the programs in the `Bubble_Examples` Folder to view the structure your basic English program should resemble
 #### 3. With this knowledge write the program and save it in the Text folder.  Follow the Steps to Run the program above except instead of inputing `Problem1.txt`, type the name of your program's text file.
