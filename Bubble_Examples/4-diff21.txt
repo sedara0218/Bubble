@@ -1,0 +1,31 @@
+//Author: Siddhartha Edara
+//Date: 09/28/16
+//Project: Bubble
+//Task: CodingBat
+//Analysis: 4
+
+Problem: Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.
+
+Bubble:
+1. Ask user for Integer input, "Input an integer: " and if their reply is less than 21 then [return the absolute value of the difference between n and 21], else [return double the difference between n and 21].
+
+Java:
+//Initialize Bubble Variables
+Var v = new Var();
+
+//Ask user for Integer input, "Input an integer: "
+Scanner sc1 = new Scanner(System.in)
+System.out.println("Input an integer: ");
+int userReply1 = sc.nextInt();
+
+//and if their reply is less than 21 then
+if (userReply1 < 21) {
+	//[return the absolute value of the difference between n and 21]
+	return Math.abs(diff([n, 21]));
+}
+
+//else [return double the difference between n and 21]
+else {
+	return 2*diff([n, 21]);
+}
+

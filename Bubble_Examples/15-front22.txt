@@ -1,0 +1,27 @@
+//Author: Siddhartha Edara
+//Date: 09/30/16
+//Project: Bubble
+//Task: CodingBat
+//Analysis: 15
+
+Problem: Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, so "kitten" yields"kikittenki". 
+If the string length is less than 2, use whatever chars are there.
+
+Bubble:
+Ask user and store in str.
+Define "2String2" as a function which is given a String tmp and returns a String.  The function stores the first 2 characters of tmp in c and returns c+tmp+c.
+If str length is less than 2 then [return str] else [return 2String2 of str] 
+
+
+Java:
+
+public String front22(String str) {
+  // First figure the number of chars to take
+  int take = 2;
+  if (take > str.length()) {
+    take = str.length();
+  }
+  
+  String front = str.substring(0, take);
+  return front + str + front;
+}

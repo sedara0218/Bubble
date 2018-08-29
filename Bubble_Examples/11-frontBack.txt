@@ -1,0 +1,23 @@
+//Author: Siddhartha Edara
+//Date: 09/28/16
+//Project: Bubble
+//Task: CodingBat
+//Analysis: 11
+
+Problem: Given a string, return a new string where the first and last chars have been exchanged.
+
+Bubble:
+Ask user, "Enter string: " and store in String str.
+Remove first character of str and store in character a.
+Remove last character of str and store in character b.
+Return b + str + a.
+
+Java:
+public String frontBack(String str) {
+  if (str.length() <= 1) return str;
+  
+  String mid = str.substring(1, str.length()-1);
+  
+  // last + mid + first
+  return str.charAt(str.length()-1) + mid + str.charAt(0);
+}

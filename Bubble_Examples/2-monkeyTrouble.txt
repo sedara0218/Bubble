@@ -1,0 +1,27 @@
+//Author: Siddhartha Edara
+//Date: 09/26/16
+//Project: Bubble
+//Task: CodingBat
+
+Problem: We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. 
+			We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble.
+
+Bubble:
+
+ask user, "Is monkey a smiling?" and store in userIn1
+ask user, "Is monkey b smiling?" and store in userIn2
+
+if userIn1 is = Yes, then
+	aSmile is equal to true
+else
+	aSmile is equal to false
+	
+if userIn2 is = Yes, then 
+	bSmile is equal to true
+else
+	bSmile is equal to false
+	
+if monkey a is aSmile and monkey b is bSmile or if monkey a is not aSmile and money b is not bSmile, then
+	return true
+else
+	return false

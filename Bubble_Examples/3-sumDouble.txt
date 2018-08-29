@@ -1,0 +1,45 @@
+//Author: Siddhartha Edara
+//Date: 09/26/16
+//Project: Bubble
+//Task: CodingBat
+//Analysis: 3
+
+Problem: Given two int values, return their sum. Unless the two values are the same, then return double their sum.
+
+Bubble (Basic):
+1. Ask user, "Input an integer: " and store value in Integer number1.
+2. Ask user, "Input another integer: " and store value in Integer number2.
+3. The Integer sum is equal to number1 plus number2.
+4. If number1 is equal to number2, then [return two times the sum].  Else [return sum].
+
+Java:
+//Initialize Bubble
+Var v = new Var();
+
+//Ask user, "Input an integer: "
+Scanner sc1029K0 = new Scanner(System.in);
+System.out.println("Input an integer: ");
+String userReplyA0192 = sc1029K0.next();
+
+//and store value in Integer number1
+v.store("Integer", "number1", userReplyA0192);
+
+//Ask user, "Input another integer: "
+Scanner sc45G2180 = new Scanner(System.in);
+System.out.println("Input another integer: ");
+String userReply92H010 = sc45G2180.next();
+
+//and store value in Integer number2
+v.store("Integer", "number2", userReply92H010);
+
+//The Integer sum is equal to number1 plus number2.
+v.store("Integer", "sum", v.getValue("number1") + v.getValue("number2"));
+
+//If number1 is equal to number2, then [return two times the sum].  Else [return sum].
+if (v.getStringValue("number1").equals(v.getStringValue("number2"))) {
+	return 2*v.getValue("sum");
+}
+else {
+	return v.getValue("sum");
+}
+

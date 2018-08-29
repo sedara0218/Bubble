@@ -1,0 +1,30 @@
+//Author: Siddhartha Edara
+//Date: 09/26/16
+//Project: Bubble
+//Task: CodingBat
+//Analysis: 12
+
+Problem: Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front.
+
+Bubble:
+Ask user for string, "Input String: " and store in str.
+//Define -> Used to define a method
+Define "FRONT" to give the first 3 chars of a given String. //Default -> 0 index 
+Define "FRONTv2" as the 3 characters from the 0th index of a String. 
+If the length of the string is less than 3 then [return str] else [return the FRONT of str]
+
+
+Java: 
+
+public String front3(String str) {
+  String front;
+  
+  if (str.length() >= 3) {
+    front = str.substring(0, 3);
+  }
+  else {
+    front = str;
+  }
+
+  return front + front + front;
+}

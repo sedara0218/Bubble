@@ -1,0 +1,43 @@
+//Author: Siddhartha Edara
+//Date: 09/28/16
+//Project: Bubble
+//Task: CodingBat
+//Analysis: 5
+
+Problem: We have a loud talking parrot. The "hour" parameter is the 
+current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return true if we are in trouble.
+
+Bubble (Basic):
+1. Keep [asking user for integer input, "Enter hour" till [their reply is in range 0 to 23] and store in Integer hour].
+2. If hour is less than 7 or greater than 20 then [return true], else [return false].
+
+Java:
+//Keep [asking user for integer input...till 
+Scanner sc = new Scanner(System.in);
+int userReply;
+
+//asking user for integer input, "Enter hour" till [their reply is in range 0 to 23] and store in Integer hour].
+while(userReply != null && range(userReply,0,23)) {
+	System.out.println("Enter hour");
+	userReply = sc.nextInt();
+}
+
+Bubble (Advanced-May have errors): 
+1. Keep [asking user for Integer input, "Enter hour" till [their reply is in range 0 to 23] and if their reply is less than 7 or greater than 20 then [return true], else [return false]].
+
+Java:
+//Keep [asking user for integer input...till 
+Scanner sc = new Scanner(System.in);
+int userReply;
+
+//asking user for integer input, "Enter hour" till [their reply is in range 0 to 23] and if their reply is [less than 7 or greater than 20] then [return true], else [return false]].
+while(userReply != null && range(userReply,0,23)) {
+	System.out.println("Enter hour");
+	userReply = sc.nextInt();
+	if (userReply < 7 || userReply > 20) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}

@@ -1,0 +1,23 @@
+//Author: Siddhartha Edara
+//Date: 09/28/16
+//Project: Bubble
+//Task: CodingBat
+//Analysis: 7
+
+Problem: Given an int n, return true if it is within 10 of 100 or 200. 
+
+Bubble: 
+Ask user for integer input, "Enter int n: " and store in int n.
+If n is in range of 90 to 110 or if it is in range of 190 to 210 then [return true] else [return false].
+//If n is [in range of 90 to 110 or in range of 190 to 210] then [return true] else [return false].
+
+Java:
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter int n: ");
+int userReply = sc.nextInt();
+
+//User forgets to include value in store value (store their reply) so Bubble sets it to the most recently created variable in line.
+int n = userReply;
+
+if (range(n, 90, 110) || range(n, 190, 210)) {return true};
+else {return false;}

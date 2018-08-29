@@ -1,0 +1,18 @@
+//Author: Siddhartha Edara
+//Date: 09/30/16
+//Project: Bubble
+//Task: CodingBat
+//Analysis: 14
+
+Problem: Return true if the given non-negative number is a multiple of 3 or a multiple of 5.
+
+Bubble:
+Ask user for an integer, "Enter int: " and store in i.
+If i is [a multiple of 3 or a multiple of 5] then [return true] else [return false].
+
+
+Java:
+
+public boolean or35(int n) {
+  return (n % 3 == 0) || (n % 5 == 0);
+}

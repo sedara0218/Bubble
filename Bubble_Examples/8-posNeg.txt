@@ -1,0 +1,39 @@
+//Author: Siddhartha Edara
+//Date: 09/28/16
+//Project: Bubble
+//Task: CodingBat
+//Analysis: 8
+
+Problem: Given 2 int values, return true if one is negative and one is positive. Except if the parameter "negative" is true, then return true only if both are negative.
+
+Bubble: 
+Ask user for integer input, "Give one num: " and store in int a.
+Ask user for integer input, "Give another num: " and store in int b.
+Ask user for boolean input, "Give the boolean negative: " and store in boolean neg.
+If neg is true and a is less than 0 and b is less or if a is negative and b is positive or if a is positive and b is negative then [return true] else [return false].
+
+Java:
+Scanner sc = new Scanner(System.in);
+System.out.println("Give one num: ");
+int userReply = sc.nextInt();
+
+int a = userReply;
+
+sc = new Scanner(System.in);
+System.out.println("Give another num: ");
+userReply = sc.nextInt();
+
+int b = userReply;
+
+sc = new Scanner(System.in);
+System.out.println("Give the boolean negative: ");
+boolean userReply2 = sc.next();
+
+boolean neg = userReply2;
+
+if ((neg == true && a < 0 && b < 0) || (negative(a) && positive(b)) || (positive(a) && negative(b))) {
+	return true;
+}
+else {
+	return false;
+}

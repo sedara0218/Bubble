@@ -1,0 +1,35 @@
+//Author: Siddhartha Edara
+//Date: 09/26/16
+//Project: Bubble
+//Task: CodingBat
+
+Problem: The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.
+
+Bubble:
+
+ask user, "Is it a Weekday?" and store value in userIn1
+ask user, "Is it a Vacation?" and store value in userIn2
+
+if userIn1 is = to Yes, then
+	weekday is = to true
+else
+	weekday is = to false
+	
+if userIn2 is = to Yes, then 
+	vacation is equal to true
+else
+	vacation is equal to false
+	
+if it is not a weekday and it is a vacation, then
+	return true
+else 
+	return false
+	
+	
+ask the user for two integer inputs and add the two integers together and divide them by 2
+
+if the remainder is 0 then print the sum of the two numbers divided by two
+
+if the remainder is 1, then print the sum
+
+

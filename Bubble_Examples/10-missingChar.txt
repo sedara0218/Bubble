@@ -1,0 +1,28 @@
+//Author: Siddhartha Edara
+//Date: 09/28/16
+//Project: Bubble
+//Task: CodingBat
+//Analysis: 10
+
+Problem: Given a non-empty string and an int n, return a new string 
+where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..str.length()-1 inclusive).
+
+Bubble:
+Ask user, "Enter str: " and store in String str.
+Ask user for integer input, "Enter int: " and store in int i.
+Remove character from str at i and return str.
+
+Java:
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter str: ");
+String userReply = sc.next();
+
+String str = userReply;
+
+//Have a check for Scanner?
+System.out.println("Enter int: ");
+int userReply1 = sc.nextInt();
+
+removeChar(str, i);
+
+return str;

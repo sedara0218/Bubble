@@ -1,0 +1,23 @@
+//Author: Siddhartha Edara
+//Date: 09/30/16
+//Project: Bubble
+//Task: CodingBat
+//Analysis: 13
+
+Problem: Given a string, take the last char and return a new string with the last char added at the front and back, so "cat" yields "tcatt". The original string will be length 1 or more.
+
+Bubble:
+Ask user, "String: " and store in str.
+The character c is the last char of str.
+Return c plus str plus c. 
+//Alerternate -> Append c to front of str and append c to end of str. Return str.
+
+
+Java:
+
+public String backAround(String str) {
+  // Get the last char
+  String last = str.substring(str.length() - 1);
+  return last + str + last;
+}
+
